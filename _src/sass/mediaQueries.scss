@@ -1,10 +1,3 @@
-$break: (
-  pc: 1024px,
-  sp: (
-    min: 320px,
-    max: 640px
-  )
-);
 @mixin media ($breakName, $AryPoints: $break) {
   @if map-has-key($AryPoints, $breakName) {
     @if length(map-get($AryPoints, $breakName)) != 1 {
@@ -20,17 +13,3 @@ $break: (
     }
   }
 }
-a {
-  color: #fff;
-}
-@include media(pc) {
-  a {
-    color: #ccc;
-  }
-};
-
-@include media(sp) {
-  a {
-   color: #ddd;
-  }
-};

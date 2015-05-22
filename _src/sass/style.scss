@@ -1,0 +1,17 @@
+@import "./config";
+@import "./mediaQueries";
+
+a {
+  color: #fff;
+}
+@include media(pc) {
+  a {
+    color: #ccc;
+  }
+};
+
+@include media(sp) {
+  a {
+   color: #ddd;
+  }
+};

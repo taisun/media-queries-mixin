@@ -8,7 +8,7 @@ gulp.task('sass', function () {
     var sassOption = {
         style: 'expanded'
     };
-    return $.rubySass('_src/sass/mediaQueries.scss', sassOption)
+    return $.rubySass('_src/sass/style.scss', sassOption)
             .on('error', function (err) {
                 $.notify.onError('Error: <%= err.message %>');
             })
